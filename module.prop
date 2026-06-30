@@ -4,3 +4,4 @@ version=1.0
 versionCode=1
 author=Technical Mundeer
 description=Unix based Gaming Performance Engine with CPU, GPU, Memory, Touch and Network optimizations.
+updateJson=[https://raw.githubusercontent.com/technicalmundeerYT/Unix-Performance-Engine/main/update.json](https://raw.githubusercontent.com/technicalmundeerYT/Unix-Performance-Engine/main/update.json)
