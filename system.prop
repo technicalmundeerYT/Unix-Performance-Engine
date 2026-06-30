@@ -1,0 +1,24 @@
+# --- Gaming & Performance Tweaks ---
+# Disable surface flinger triple buffering for lower latency
+debug.composition.type=c2d
+debug.sf.latch_unsignaled=1
+debug.sf.enable_hwc_vds=1
+
+# Better rendering for UI and Games
+video.accelerate.hw=1
+ro.media.enc.jpeg.quality=100
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+
+# Battery saving during gaming (CPU scheduling)
+ro.config.hw_power_saving=1
+ro.config.hw_high_perf_mode=0
+
+# Touch responsiveness tweaks
+ro.min_pointer_dur=8
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+
+# Force high-quality graphics in games
+ro.sf.lcd_density=480
+persist.sys.use_dithering=0
