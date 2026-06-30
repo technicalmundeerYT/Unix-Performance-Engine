@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-# Magisk module settings
+## Magisk module settings
 SKIPMOUNT=false
 PROPFILE=true
 POSTFSDATA=true
