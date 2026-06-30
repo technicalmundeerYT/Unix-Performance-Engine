@@ -1,0 +1,6 @@
+id=unix.performance.engine
+name=Unix Performance Engine
+version=1.0
+versionCode=1
+author=Technical Mundeer
+description=Unix based Gaming Performance Engine with CPU, GPU, Memory, Touch and Network optimizations.
