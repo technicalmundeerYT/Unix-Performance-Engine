@@ -23,22 +23,29 @@ on_install() {
   ui_print "Initializing Performance Units..."
   ui_print " "
   
-  # Loading sequence with 1-second delay
-  sleep 1; ui_print "[✓] CPU Unit Loaded"
-  sleep 1; ui_print "[✓] GPU Unit Loaded"
-  sleep 1; ui_print "[✓] Memory Unit Loaded"
-  sleep 1; ui_print "[✓] Storage Unit Loaded"
-  sleep 1; ui_print "[✓] Touch Unit Loaded"
-  sleep 1; ui_print "[✓] Network Unit Loaded"
-  sleep 1; ui_print "[✓] Thermal Unit Loaded"
-  sleep 1; ui_print "[✓] Display Unit Loaded"
-  sleep 1; ui_print "[✓] Battery Unit Loaded"
+  # Premium animation ka raaz: 'echo' ke sath '-e' use karna aur flush karna
+  # Magisk installer mein direct terminal output force karne ke liye:
+  
+  (
+    sleep 1; echo -e "[✓] CPU Unit Loaded"
+    sleep 1; echo -e "[✓] GPU Unit Loaded"
+    sleep 1; echo -e "[✓] Memory Unit Loaded"
+    sleep 1; echo -e "[✓] Storage Unit Loaded"
+    sleep 1; echo -e "[✓] Touch Unit Loaded"
+    sleep 1; echo -e "[✓] Network Unit Loaded"
+    sleep 1; echo -e "[✓] Thermal Unit Loaded"
+    sleep 1; echo -e "[✓] Display Unit Loaded"
+    sleep 1; echo -e "[✓] Battery Unit Loaded"
+  ) | while read line; do
+      ui_print "$line"
+  done
   
   ui_print " "
   ui_print "Status : SUCCESS"
   ui_print "Developer : Technical Mundeer"
   ui_print "*******************************"
 }
+
 
 set_permissions() {
   set_perm_recursive "$MODPATH" 0 0 0755 0644
