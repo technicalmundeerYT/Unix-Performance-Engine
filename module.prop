@@ -1,7 +1,7 @@
 id=unix.performance.engine
 name=Unix Performance Engine
 version=1.1
-versionCode=2
+versionCode=1
 author=Technical Mundeer
 description=Unix based Gaming Performance Engine with CPU, GPU, Memory, Touch and Network optimizations.
 updateJson=https://raw.githubusercontent.com/technicalmundeerYT/Unix-Performance-Engine/main/update.json
