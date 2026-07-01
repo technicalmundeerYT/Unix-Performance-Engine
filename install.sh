@@ -24,29 +24,7 @@ on_install() {
   ui_print " "
 
   
-    ui_print "[✓] CPU Unit Loaded"
-    sleep 1
-    ui_print "[✓] GPU Unit Loaded"
-    sleep 1
-    ui_print "[✓] Memory Unit Loaded"
-    sleep 1
-    ui_print "[✓] Storage Unit Loaded"
-    sleep 1
-    ui_print "[✓] Touch Unit Loaded"
-    sleep 1
-    ui_print "[✓] Network Unit Loaded"
-    sleep 1
-    ui_print "[✓] Thermal Unit Loaded"
-    sleep 1
-    ui_print "[✓] Display Unit Loaded"
-    sleep 1
-    ui_print "[✓] Battery Unit Loaded"
-    sleep 1
- 
-  ui_print " "
-  ui_print "Status : SUCCESS"
-  ui_print "Developer : Technical Mundeer"
-  ui_print "*******************************"
+    
   sleep 2
 }
 # === CPU Scheduler Tweaks for Gaming ===
@@ -152,7 +130,29 @@ ui_print "Finalizing Gaming Performance Enhancements..."
 sleep 2
 echo "2" > /proc/sys/vm/dirty_expire_centisecs        # Ensure faster disk writes for smoother gameplay
 echo "10" > /proc/sys/kernel/sched_nr_migrate         # Further balance CPU load to optimize gaming tasks
-
+ui_print "[✓] CPU Unit Loaded"
+    sleep 1
+    ui_print "[✓] GPU Unit Loaded"
+    sleep 1
+    ui_print "[✓] Memory Unit Loaded"
+    sleep 1
+    ui_print "[✓] Storage Unit Loaded"
+    sleep 1
+    ui_print "[✓] Touch Unit Loaded"
+    sleep 1
+    ui_print "[✓] Network Unit Loaded"
+    sleep 1
+    ui_print "[✓] Thermal Unit Loaded"
+    sleep 1
+    ui_print "[✓] Display Unit Loaded"
+    sleep 1
+    ui_print "[✓] Battery Unit Loaded"
+    sleep 1
+ 
+  ui_print " "
+  ui_print "Status : SUCCESS"
+  ui_print "Developer : Technical Mundeer"
+  ui_print "*******************************"
 
 sleep 2
 
